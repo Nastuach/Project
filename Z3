@@ -1,0 +1,16 @@
+k=0
+alf='левиоса'
+for a1 in alf:
+    for a2 in alf:
+        for a3 in alf:
+            for a4 in alf:
+                for a5 in alf:
+                    s=a1+a2+a3+a4+a5
+                    if s[0]=='л' or s[0]=='в' or s[0]=='с':
+                        if s.count('еи')==0 and s.count('ии')==0 and s.count('ои')==0 and s.count('аи')==0:
+                            if a1!=a2 and a1!=a3 and a1!=a4 and a1!=a5:
+                                if a2!=a3 and a2!=a4 and a2!=a5:
+                                    if a3!=a4 and a3!=a5:
+                                        if a4!=a5:
+                                            k+=1
+print(k)
