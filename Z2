@@ -1,0 +1,10 @@
+from itertools import product
+k=0
+mas=[]
+alf='авгорстх'
+for x in product(alf,repeat=4):
+    s=''.join(x)
+    k+=1
+    if s=='гора' or s=='торг':
+        mas.append(k)
+print(mas[1]-mas[0]-1)
