@@ -1,0 +1,10 @@
+from itertools import permutations
+k=0
+alf='левиоса'
+for x in permutations(alf,r=5):
+    s=''.join(x)
+    if s[0]=='л' or s[0]=='в' or s[0]=='с':
+        if s.count('еи')==0 and s.count('ии')==0 and s.count('ои')==0 and s.count('аи')==0:
+            k+=1
+                                            
+print(k)
