@@ -1,12 +1,21 @@
 k=0
-alf='авгорстх'
-mas=[]
+alf='ABCDEFGHI'
+for a1 in alf:
+    for a2 in alf:
+        if a1!=a2 and a1>a2:
+            k+=1
+for a1 in alf:
+    for a2 in alf:
+        for a3 in alf:
+            if a1!=a2 and a2!=a3 and a1!=a3 and a1>a2 and a2>a3:
+                k+=1
 for a1 in alf:
     for a2 in alf:
         for a3 in alf:
             for a4 in alf:
-                s=a1+a2+a3+a4
-                k+=1
-                if s=='гора' or s=='торг':
-                    mas.append(k)
-print(mas[1]-mas[0]-1)
+                if a1!=a2 and a1!=a3 and a1!=a4:
+                    if a2!=a3 and a2!=a4:
+                        if a3!=a4:
+                            if a1>a2 and a2>a3 and a3>a4:
+                                k+=1
+print(k)
