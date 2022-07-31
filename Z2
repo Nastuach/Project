@@ -1,10 +1,10 @@
-from itertools import product
+from itertools import combinations
 k=0
-mas=[]
-alf='авгорстх'
-for x in product(alf,repeat=4):
-    s=''.join(x)
+alf='ABCDEFGHI'
+for x in combinations(alf,r=2):
     k+=1
-    if s=='гора' or s=='торг':
-        mas.append(k)
-print(mas[1]-mas[0]-1)
+for x in combinations(alf,r=3):
+    k+=1
+for x in combinations(alf,r=4):
+    k+=1
+print(k)
